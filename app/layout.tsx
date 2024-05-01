@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
 const font = Inter({ subsets: ["latin"] });
+
+import ClerkProvider from "@/providers/clerk-provider";
+import ThemeProvider from "@/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "Budget Tracker"
@@ -12,7 +14,9 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ClerkProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
