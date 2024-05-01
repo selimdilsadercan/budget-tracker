@@ -8,10 +8,10 @@
 - [x] html, body, :root { height: 100% } thing at app/globals.css
 - [x] "npx shadcn-ui@latest add button" to add button
 
-- [ ] "npm install next-themes"
-- [ ] add theme-provider.tsx
-- [ ] create ThemeToggle.tsx switch
-- [ ] wrap {children} with ThemeProvider
+- [x] "npm install next-themes"
+- [x] add theme-provider.tsx
+- [x] create ThemeToggle.tsx switch
+- [x] wrap {children} with ThemeProvider
 
 - [ ] "npm i @clerk/nextjs"
 - [ ] create clerk project
