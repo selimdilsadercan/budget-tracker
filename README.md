@@ -28,3 +28,5 @@
 - extensions:
 
 ---
+
+- npx shadcn-ui@latest add yazınca hangi componentleri yüklemek istediğine dair bir toggle çıkıyor hızlıca ordan yükleyebilirsin
